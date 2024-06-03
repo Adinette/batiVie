@@ -1,0 +1,46 @@
+@import url("../style/css/bootstrap.css");
+@import url("../style/css/bootstrap.min.css");
+@import url("../style/css/bootstrap-icons.css");
+
+ul li{
+    list-style: none;
+}
+ul{
+    padding-left: 0;
+}
+
+.navbar{
+    background-color: #191A19;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+    color: #fab341;
+    text-decoration: underline #fab341;
+}
+
+.navbar .navbtn{
+    padding: 1rem;
+    color: #000;
+    background-color: #fab341;
+    border: none;
+    border-radius: 1rem;
+}
+.footer{
+    padding-top: 10rem;
+    background-color: #191A19;
+    color: #fff;
+}
+
+.banner-bg {
+    padding: 10rem 0 10rem !important;
+    background-image: url(./icon/banner_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
