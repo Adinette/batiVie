@@ -7,31 +7,36 @@ import { images } from '../style/icon'
 
 
 export default function Service() {
+  const servicesCards = [
+    {
+      iconSrc: images.service1,
+      title: '',
+      description: 'Venez à la rencontre des plus grande marque de sanitaire',
+    },
+    {
+      iconSrc: images.service2,
+      title: '',
+      description: 'Venez à la rencontre des plus grande marque de sanitaire',
+    },
+    {
+      iconSrc: images.service3,
+      title: '',
+      description: 'Venez à la rencontre des plus grande marque de sanitaire',
+    },
+  ]
+
   return (
     <div>
       <Header />
       <Banner
-      title={'Nos services'}
-      description={'Nous proposons une variété de services'}
-      />
-      <div className='bg-black py-4'>
-      <div className="container">
-        <div className='row'>
-          <Card
-          iconSrc={images.service1}
-          title={'Location de machine Grue'}
-          />
-          <Card
-          iconSrc={images.service3}
-          title={'Location de machine Grue'}
-          />
-          <Card
-          iconSrc={images.service1}
-          title={'Location de machine Grue'}
-          />
-          <div><button type='button'>Voir plus</button></div>
-        </div>
-      </div>
+        title={'Nos services'}
+        description={'Nous proposons une variété de services'}
+      /><div className='row'>
+        {servicesCards.map((card, index) => (
+          <div key={index} className={`col-lg-4 `}>
+            <Card {...card} customClassName="card-project" />
+          </div>
+        ))}
       </div>
       <Footer />
     </div>

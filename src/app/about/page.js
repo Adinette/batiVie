@@ -3,8 +3,28 @@ import Header from '../../component/Header'
 import Footer from '../../component/Footer'
 import Image from 'next/image'
 import { images } from '../style/icon'
+import Card from '@/component/Card'
+
 
 export default function About() {
+  const aboutCards = [
+    {
+      iconSrc: images.project1,
+      title: 'JOHN DOE',
+      description: 'TECHNICIEN',
+    },
+    {
+      iconSrc: images.project1,
+      title: 'JOHN DOE',
+      description: 'TECHNICIEN',
+    },
+    {
+      iconSrc: images.project1,
+      title: 'JOHN DOE',
+      description: 'TECHNICIEN',
+    },
+  ]
+
   return (
     <div>
       <Header />
@@ -12,7 +32,7 @@ export default function About() {
         <div className="row">
           <div className="col-10 mx-auto">
             <h3>A propos de nous</h3>
-            <a class="navbar-brand" href="#"><Image src={images.logo} alt="logo"/></a>
+            <a class="navbar-brand" href="#"><Image src={images.logo} alt="logo" /></a>
             <p>lorem ipsum is simply dummy textof th printing and typesetting
               lorem ipsum is simply dummy textof th printing and typesetting
               lorem ipsum is simply dummy textof th printing and typesetting
@@ -23,42 +43,20 @@ export default function About() {
         </div>
       </div>
       <div className="container">
-        <div className="row">
-          <div className="col-10 mx-auto">
-            <h3>Notre equipe</h3>
-          </div>
-        </div>
+        <SectionTitle
+          title="NOtre equipe"
+          description=""
+          className={''}
+        />
         <div className='row'>
-          <div className='col-lg-4'>
-            <div class="card border-0">
-              <Image src={images.logo} alt="logo"/>
-              <div class="card-body pb-4">
-                <h5 class="card-title text-center mb-3">JOHN  DOE</h5>
-                <h5 class="card-title text-center mb-3">TECHNICIEN</h5>
-              </div>
+          {aboutCards.map((card, index) => (
+            <div key={index} className={`col-lg-4 `}>
+              <Card {...card} customClassName="card-project" />
             </div>
-          </div>
-          <div className='col-lg-4'>
-            <div class="card border-0">
-              <Image src={images.logo} alt="logo"/>
-              <div class="card-body pb-4">
-                <h5 class="card-title text-center mb-3">JOHN  DOE</h5>
-                <h5 class="card-title text-center mb-3">TECHNICIEN</h5>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-4'>
-            <div class="card border-0">
-              <Image src={images.logo} alt="logo"/>
-              <div class="card-body pb-4">
-                <h5 class="card-title text-center mb-3">JOHN  DOE</h5>
-                <h5 class="card-title text-center mb-3">TECHNICIEN</h5>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

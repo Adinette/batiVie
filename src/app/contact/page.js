@@ -2,14 +2,15 @@ import React from 'react'
 import Header from '../../component/Header'
 import Footer from '../../component/Footer'
 import Banner from '../../component/Banner'
-import Image from 'next/image'
-import { images } from '../style/icon'
 
 export default function Contact() {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner 
+        title={'Contact'}
+        description={'Nous contacter'}
+      />
       <div className="container">
         <div className="row">
           <div className="col-10 mx-auto">

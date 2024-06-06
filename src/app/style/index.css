@@ -2,6 +2,28 @@
 @import url("../style/css/bootstrap.min.css");
 @import url("../style/css/bootstrap-icons.css");
 
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #fab341;
+}
+img{
+    max-width: 100%;
+}
 ul li{
     list-style: none;
 }
@@ -17,20 +39,102 @@ ul{
     text-decoration: none;
 }
 
-.navbar a:hover,
-.navbar a:active,
-.navbar a:focus{
+.nav-underline a:hover,
+.nav-underline a:active,
+.nav-underline a:focus{
     color: #fab341;
-    text-decoration: underline #fab341;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
 }
 
-.navbar .navbtn{
-    padding: 1rem;
+.btn-primary{
     color: #000;
     background-color: #fab341;
-    border: none;
-    border-radius: 1rem;
 }
+
+.btn-outline-primary{
+    color: #000;
+    background-color: #fff;
+}
+/* home */
+.home_bg {
+    background-image: url(./icon/home_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_bg .row{
+    padding: 7rem 0;
+}
+.home-listing{
+    background-color: #fab341;
+    padding: 2.3rem 1.5rem;
+    border-radius: 1rem;
+    transform: translateY(470px);
+}
+
+.home-experience{
+    display: flex;
+    align-items: center;
+    transform: translateY(110px);
+}
+.home-experience-item{
+    display: flex;
+    align-items: center;
+}
+
+.home-experience-item h4{
+    color: #fab341;
+}
+.home-experience-item span{
+    color: #fff;
+}
+.experience{
+    background-color: #191a19;
+}
+.experience-text{
+    padding-top: 12rem;
+    color: #fff;
+}
+.experience-text h2{
+    color: #fab341;
+}
+
+.project{
+    color: #000;
+    background-color: #fab341;
+}
+
+.project .container{
+    padding: 7rem 0 0;
+}
+
+.card-project{
+    position: relative;
+    top: -8rem;
+    text-align: center;
+}
+
+.products{
+    padding: 5rem 0;
+    background-color: #191a19;
+    color: #fff;
+}
+
+.testimonials{
+    background-color: #191A19;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials h2{
+    color: #fab341;
+}
+/* footer */
 .footer{
     padding-top: 10rem;
     background-color: #191A19;
@@ -38,9 +142,9 @@ ul{
 }
 
 .banner-bg {
-    padding: 10rem 0 10rem !important;
+    padding: 0 0 10rem !important;
     background-image: url(./icon/banner_bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
