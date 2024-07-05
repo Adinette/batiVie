@@ -4,15 +4,15 @@ import { images } from '../app/style/icon'
 import React, { useEffect, useState } from 'react';
 import { HeaderItem } from './HeaderItem';
 
-export default function Header() {
+export default function Header({className}) {
   const HeaderItems = [
     {
       title: 'Acceuil',
       url: '/home',
     },
     {
-      title: 'Quincallerie',
-      url: '/home',
+      title: 'Produits',
+      url: '/produit',
     },
     {
       title: 'Services',
@@ -28,7 +28,7 @@ export default function Header() {
     },
   ]
   return (
-    <header class="">
+    <header class={""}>
       <nav class="navbar navbar-expand-lg p-3">
         <div class="container">
           <a class="navbar-brand py-0 me-0" href="#"><Image src={images.logo} alt="logo" width={200} height={60} /></a>
@@ -36,9 +36,7 @@ export default function Header() {
             className={`collapse navbar-collapse justify-content-center`} id="navbarSupportedContent">
             <ul class="nav nav-underline">
               {HeaderItems.map((card, index) => (
-                <div key={index} className={`col-lg-4 `}>
-                  <HeaderItem {...card} className="" />
-                </div>
+                  <HeaderItem key={index} {...card} className="" />
               ))}
 
             </ul>

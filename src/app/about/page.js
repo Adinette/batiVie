@@ -4,6 +4,7 @@ import Footer from '../../component/Footer'
 import Image from 'next/image'
 import { images } from '../style/icon'
 import Card from '@/component/Card'
+import SectionTitle from '@/component/SectionTitle'
 
 
 export default function About() {
@@ -28,11 +29,12 @@ export default function About() {
   return (
     <div>
       <Header />
+      <div className='about'>
       <div className="container">
         <div className="row">
           <div className="col-10 mx-auto">
-            <h3>A propos de nous</h3>
-            <a class="navbar-brand" href="#"><Image src={images.logo} alt="logo" /></a>
+            <h2>A propos de nous</h2>
+            <a className="navbar-brandr" href="#"><Image src={images.logo} alt="logo" /></a>
             <p>lorem ipsum is simply dummy textof th printing and typesetting
               lorem ipsum is simply dummy textof th printing and typesetting
               lorem ipsum is simply dummy textof th printing and typesetting
@@ -42,19 +44,22 @@ export default function About() {
           </div>
         </div>
       </div>
+      </div>
+      <div className='team'>
       <div className="container">
         <SectionTitle
-          title="NOtre equipe"
+          title="Notre equipe"
           description=""
           className={''}
         />
         <div className='row'>
           {aboutCards.map((card, index) => (
             <div key={index} className={`col-lg-4 `}>
-              <Card {...card} customClassName="card-project" />
+              <Card {...card} customClassName="card-about" />
             </div>
           ))}
         </div>
+      </div>
       </div>
       <Footer />
     </div>

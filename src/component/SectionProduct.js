@@ -88,8 +88,8 @@ function Card({ iconSrc, title, description, customClassName, onClick }) {
     <div className={`card bg-transparent text-white border-0 `} onClick={onClick}>
       <Image src={iconSrc} alt="product" />
       <div className={`card-body ${customClassName}`}>
-        <h5 className="card-title text-center mb-3">{title}</h5>
-        <p className="card-text">{description}</p>
+        <h4 className="card-title mb-3">{title}</h4>
+        <p className="card-text text-white">{description}</p>
       </div>
     </div>
   );

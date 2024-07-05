@@ -9,7 +9,7 @@ import SectionProject from '@/component/SectionProject'
 export default function Home() {
 
     return (
-        <div>
+        <div className='home'>
             <Header />
             <div className='home_bg pb-4'>
                 <div className='container'>

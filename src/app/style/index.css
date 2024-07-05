@@ -2,149 +2,290 @@
 @import url("../style/css/bootstrap.min.css");
 @import url("../style/css/bootstrap-icons.css");
 
-h1{
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
-h2{
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
-.h1{
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #fab341;
+.h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #fab341;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
+  width: auto;
+  object-fit: cover;
 }
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
-ul{
-    padding-left: 0;
+ul {
+  padding-left: 0;
 }
 
-.navbar{
-    background-color: #191A19;
+.navbar {
+  background-color: #191a19;
 }
-.navbar a{
-    color: #fff;
-    text-decoration: none;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-underline a:hover,
 .nav-underline a:active,
-.nav-underline a:focus{
-    color: #fab341;
+.nav-underline a:focus {
+  color: #fab341;
 }
-.btn{
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 6px;
-}
-
-.btn-primary{
-    color: #000;
-    background-color: #fab341;
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
 }
 
-.btn-outline-primary{
-    color: #000;
-    background-color: #fff;
+.btn-primary {
+  color: #000;
+  background-color: #fab341;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+  color: #000;
+  background-color: #fab341;
+}
+
+
+.btn-outline-primary {
+  color: #000;
+  background-color: #fff;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus{
+  color: #000;
+  background-color: #fff;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #191a19;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus{
+  color: #fff;
+  background-color: #191a19;
+}
+
+.form-control{
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #191a19;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  padding: 1rem ;
+}
+
+textarea.form-control {
+  min-height: calc(1.5em + 8.75rem + calc(var(--bs-border-width)* 2));
+}
+
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.card-text{
+    font-size: 1rem;
+    font-weight: 600;
 }
 /* home */
 .home_bg {
-    background-image: url(./icon/home_bg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./icon/home_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home_bg .row{
-    padding: 7rem 0;
+.home_bg .row {
+  padding: 7rem 0;
 }
-.home-listing{
-    background-color: #fab341;
-    padding: 2.3rem 1.5rem;
-    border-radius: 1rem;
-    transform: translateY(470px);
-}
-
-.home-experience{
-    display: flex;
-    align-items: center;
-    transform: translateY(110px);
-}
-.home-experience-item{
-    display: flex;
-    align-items: center;
+.home-listing {
+  background-color: #fab341;
+  padding: 2.3rem 1.5rem;
+  border-radius: 1rem;
+  transform: translateY(410px);
 }
 
-.home-experience-item h4{
+.home-experience {
+  display: flex;
+  align-items: center;
+  transform: translateY(110px);
+}
+.home-experience-item {
+  display: flex;
+  align-items: center;
+}
+
+.home-experience-item h4 {
+  color: #fab341;
+}
+.home-experience-item span {
+  color: #fff;
+}
+.experience {
+  background-color: #191a19;
+}
+.experience-text {
+  padding-top: 12rem;
+  color: #fff;
+}
+.experience-text h2 {
+  color: #fab341;
+}
+
+.project {
+  color: #000;
+  background-color: #fab341;
+}
+
+.project .container {
+  padding: 7rem 0 4rem;
+}
+
+.card-project {
+  padding: 5rem 0;
+  background-color: #191a19;
+}
+
+.card-project .card-body{
+    text-align: start;
+    padding: 0;
+}
+
+.card-project .card-title{
     color: #fab341;
-}
-.home-experience-item span{
-    color: #fff;
-}
-.experience{
-    background-color: #191a19;
-}
-.experience-text{
-    padding-top: 12rem;
-    color: #fff;
-}
-.experience-text h2{
-    color: #fab341;
+    text-decoration: underline;
+    text-decoration-color: #fab341;
 }
 
-.project{
-    color: #000;
-    background-color: #fab341;
+.card-project .card-text{
+    padding-left: 1rem;
 }
 
-.project .container{
-    padding: 7rem 0 0;
+.products {
+  padding: 5rem 0;
+  background-color: #191a19;
+  color: #fff;
 }
 
-.card-project{
-    position: relative;
-    top: -8rem;
-    text-align: center;
+.testimonials {
+  background-color: #191a19;
+  text-align: center;
+  color: #fff;
 }
 
-.products{
-    padding: 5rem 0;
-    background-color: #191a19;
-    color: #fff;
-}
-
-.testimonials{
-    background-color: #191A19;
-    text-align: center;
-    color: #fff;
-}
-
-.testimonials h2{
-    color: #fab341;
+.testimonials h2 {
+  color: #fab341;
 }
 /* footer */
-.footer{
-    padding-top: 10rem;
-    background-color: #191A19;
-    color: #fff;
+.footer {
+  padding-top: 6rem;
+  background-color: #191a19;
+  color: #fff;
 }
 
 .banner-bg {
-    padding: 0 0 10rem !important;
-    background-image: url(./icon/banner_bg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./icon/banner_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-content {
+  padding: 12rem 0;
+  text-align: center;
+  color: #fff;
+}
+.card-home{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.services{
+  padding: 4rem 0 0;
+  background-color: #191a19;
+}
+
+.services a,
+.home a{
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.services img{
+  border-radius: 0.5rem;
+}
+
+.card-service{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+}
+
+.contact{
+  background-color: #191a19;
+  padding: 4rem 0 0;
+}
+
+.contact-content{
+  background-color: #fab341;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.about{
+  background-color: #191a19;
+  padding: 4rem 0 0;
+  color: #fff;
+  text-align: center;
+}
+
+.about h2{
+  color: #fab341;
+}
+
+.team{
+  background-color: #191a19;
+  padding: 4rem 0 0;
+
+}
+
+.team h2{
+  color: #fab341;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.team .card-body{
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #000;
 }

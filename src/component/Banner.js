@@ -6,9 +6,9 @@ export default function Banner({title,description}) {
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-lg-6 mx-auto">
-                        <div class="text-center">
+                        <div class="banner-content">
                             <h2>{title}</h2>
-                            <span class="banner-content">{description}</span>
+                            <span class="banner-text">{description}</span>
                         </div>
                     </div>
                 </div>
