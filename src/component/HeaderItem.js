@@ -11,7 +11,7 @@ export const HeaderItem = ({
     <>
       <li
         className={`nav-item me-4 ${className ?? ''}`}>
-        <Link className="nav-link" title={title} href={`/${url}`}>
+        <Link className="nav-link" title={title} href={url}>
           <span>{title}</span>
         </Link>
       </li>

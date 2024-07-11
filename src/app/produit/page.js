@@ -4,36 +4,37 @@ import Footer from "../../component/Footer";
 import Banner from "@/component/Banner";
 import Card from "@/component/Card";
 import { images } from "../style/icon";
+import Breadcrumb from "@/component/Breadcrumb";
 
 export default function Produit() {
   const projectCards = [
     {
-      iconSrc: images.banner_bg,
+      iconSrc: images.service1,
       title: "Sanitaire",
       description: "Venez à la rencontre des plus grande marque de sanitaire",
     },
     {
-      iconSrc: images.banner_bg,
+      iconSrc: images.service2,
       title: "Cuisine",
       description: "Venez à la rencontre des plus grande marque de sanitaire",
     },
     {
-      iconSrc: images.banner_bg,
+      iconSrc: images.service3,
       title: "Cuisine",
       description: "Venez à la rencontre des plus grande marque de sanitaire",
     },
     {
-      iconSrc: images.banner_bg,
+      iconSrc: images.service2,
       title: "Sanitaire",
       description: "Venez à la rencontre des plus grande marque de sanitaire",
     },
     {
-      iconSrc: images.banner_bg,
+      iconSrc: images.service3,
       title: "Cuisine",
       description: "Venez à la rencontre des plus grande marque de sanitaire",
     },
     {
-      iconSrc: images.banner_bg,
+      iconSrc: images.service1,
       title: "Cuisine",
       description: "Venez à la rencontre des plus grande marque de sanitaire",
     },
@@ -46,11 +47,18 @@ export default function Produit() {
         title={"Nos produits"}
         description={"Nous proposons une variété de services"}
       />
-      <div className="card-project">
+       <Breadcrumb
+        className=""
+        content={[
+          { label: "Home", url: '/home' },
+          { label: "Produit", url: ''},
+        ]}
+      />
+      <div className="card-project pb-0">
         <div className="container">
           <div className="row">
             {projectCards.map((card, index) => (
-              <div key={index} className={`col-lg-4 mb-3`}>
+              <div key={index} className={`col-lg-4 mb-5`}>
                 <Card {...card} customClassName="" />
               </div>
             ))}

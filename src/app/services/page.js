@@ -5,6 +5,8 @@ import Banner from "@/component/Banner";
 import Card from "@/component/Card";
 import { images } from "../style/icon";
 import Link from "next/link";
+import Breadcrumb from "@/component/Breadcrumb";
+
 
 export default function Service() {
   const servicesCards = [
@@ -31,6 +33,13 @@ export default function Service() {
       <Banner
         title={"Nos services"}
         description={"Nous proposons une variété de services"}
+      />
+        <Breadcrumb
+        className=""
+        content={[
+          { label: "Home", url: '/home' },
+          { label: "Service", url: ''},
+        ]}
       />
       <div className="services">
         <div className="container">

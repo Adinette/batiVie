@@ -47,7 +47,7 @@ ul {
   color: #fab341;
 }
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.95rem 1rem;
   border: none;
   border-radius: 6px;
 }
@@ -192,6 +192,10 @@ textarea.form-control {
   color: #fff;
 }
 
+.card.home img{
+  width: fit-content;
+}
+
 .testimonials {
   background-color: #191a19;
   text-align: center;
@@ -261,6 +265,10 @@ textarea.form-control {
     padding: 2.5rem;
 }
 
+.location-title{
+  font-weight: 600;
+}
+
 .about{
   background-color: #191a19;
   padding: 4rem 0 0;
@@ -288,4 +296,15 @@ textarea.form-control {
   padding: 2rem 0;
   text-align: center;
   background-color: #000;
+}
+
+.breadcrumb{
+  background-color: #191a19;
+  padding: 3rem 0 0;
+}
+.breadcrumb a{
+  color: #fff;
+}
+.breadcrumb .breadcrumb-item-active{
+  color: #fab341;
 }
