@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { images } from '../app/style/icon'
 import React from 'react'
 
-export default function 
+export default function Footer
 () {
   return (
     <div class="footer">

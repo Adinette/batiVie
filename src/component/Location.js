@@ -9,7 +9,7 @@ export default function Location() {
           <li class="mb-3 location-title">Contact rapide</li>
           <li class="mb-3">Email : contact@bativitebenin.com</li>
           <li class="mb-3">Phone : (+229) 96-11-55-25</li>
-          <li className="mb-3 location-title">Horaire d'ouverture</li>
+          <li className="mb-3 location-title">Horaire d’ouverture</li>
           <li class="mb-3">Lundi - Vendredi</li>
           <li>08H -17H</li>
         </ul>
