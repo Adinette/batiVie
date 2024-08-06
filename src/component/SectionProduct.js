@@ -1,118 +1,129 @@
 "use client";
-import React, { useState } from "react";
+
+import React from "react";
+import { TabView, TabPanel } from "primereact/tabview";
+import Link from "next/link";
 import { images } from "../app/style/icon";
 import Image from "next/image";
-
 import SectionTitle from "./SectionTitle";
 
 export default function SectionProduct() {
-  const productCards = [
-    {
-      iconSrc: images.product1,
-      title: "Sanitaire",
-      description: "",
-      detailIcon: images.product_detail,
-      detailDescription: "Description détaillée du sanitaire...",
-    },
-
-    {
-      iconSrc: images.product1,
-      title: "Sanitaire",
-      description: "",
-      detailIcon: images.product_detail,
-      detailDescription: "Description détaillée du sanitaire...",
-    },
-
-    {
-      iconSrc: images.product1,
-      title: "Sanitaire",
-      description: "",
-      detailIcon: images.product_detail,
-      detailDescription: "Description détaillée du sanitaire...",
-    },
-
-    {
-      iconSrc: images.product1,
-      title: "Sanitaire",
-      description: "",
-      detailIcon: images.product_detail,
-      detailDescription: "Description détaillée du sanitaire...",
-    },
-    {
-      iconSrc: images.product1,
-      title: "Sanitaire",
-      description: "",
-      detailIcon: images.product_detail,
-      detailDescription: "Description détaillée du sanitaire...",
-    },
-  ];
-
-  const [selectedCardIndex, setSelectedCardIndex] = useState(null);
-
-  const handleCardClick = (index) => {
-    setSelectedCardIndex(index === selectedCardIndex ? null : index);
-  };
-
   return (
-    <div className="products">
+    <div className="product">
+      <SectionTitle
+        title="NOS PRODUITS QUINCAILLERIE"
+        description=""
+        className={"text-center text-white"}
+      />
       <div className="container">
-        <SectionTitle
-          title="Nos produits quincaillerie"
-          description=""
-          className={"text-center"}
-        />
-        <div className="row">
-          {productCards.map((card, index) => (
-            <div className="col" key={index}>
-              <Card
-                iconSrc={card.iconSrc}
-                title={card.title}
-                description={card.description}
-                onClick={() => handleCardClick(index)}
-                isSelected={selectedCardIndex === index}
-                detailIcon={card.detailIcon}
-                detailDescription={card.detailDescription}
-              />
+        <TabView>
+          <TabPanel header="SANITAIRE" className="col text-center">
+            <div className="row">
+              <div className="col-lg-6">
+                <Image src={images.project1} alt="product" />
+              </div>
+              <div className="col-lg-6 product-tab">
+                <div className="product-content text-start">
+                  <h3>Sanitaire</h3>
+                  <h6 className="">Venez à la rencontre des plus grandes marques de sanitaires
+                    et d'accessoires de salle de bains exposées dans notre
+                    showroom.Nos conseillers de ventes sont à votre disposition.</h6>
+                    <Link href={"/product"} className="">
+                    En savoir plus
+                    <Image src={images.vector} alt="vector" className="ms-3" />
+                  </Link>
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
+          </TabPanel>
+          <TabPanel header="OUTILLAGE" className="col text-center">
+            <div className="row mt-5">
+              <div className="col-lg-6">
+                <Image src={images.project1} alt="product" />
+              </div>
+              <div className="col-lg-6">
+                <div className="product-content text-start">
+                  <h3>Outillage</h3>
+                  <p>Description détaillée du outillage...</p>
+                  <Link href={"/product"} className="">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel
+            header="PLOMBERIE ET ROBINETTERIE"
+            className="col text-center"
+          >
+            <div className="row mt-5">
+              <div className="col-lg-6">
+                <Image src={images.project1} alt="product" />
+              </div>
+              <div className="col-lg-6">
+                <div className="product-content text-start">
+                  <h3>Plomberie et robinetterie</h3>
+                  <p>Description détaillée du plomberie et robinetterie...</p>
+                  <Link href={"/product"} className="">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel
+            header="QUINCAILLERIE ET SECURITE"
+            className="col text-center"
+          >
+            <div className="row mt-5">
+              <div className="col-lg-6">
+                <Image src={images.project1} alt="product" />
+              </div>
+              <div className="col-lg-6">
+                <div className="product-content text-start">
+                  <h3>Quincaillerie et sécurité</h3>
+                  <p>Description détaillée du Quincaillerie et sécurité...</p>
+                  <Link href={"/product"} className="">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel header="CARRELAGE" className="col text-center">
+            <div className="row mt-5">
+              <div className="col-lg-6">
+                <Image src={images.project1} alt="product" />
+              </div>
+              <div className="col-lg-6">
+                <div className="product-content text-start">
+                  <h3>CARRELAGE</h3>
+                  <p>Description détaillée du Carrelage...</p>
+                  <Link href={"/product"} className="">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel header="SANITAIRE" className="col text-center">
+            <div className="row">
+              <div className="col-lg-6">
+                <Image src={images.project1} alt="product" />
+              </div>
+              <div className="col-lg-6 product-tab">
+                <div className="product-content text-start">
+                  <h3>Sanitaire</h3>
+                  <p>Description détaillée du sanitaire...</p>
+                  <Link href={"/product"} className="">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+        </TabView>
       </div>
     </div>
-  );
-}
-
-function Card({
-  iconSrc,
-  title,
-  description,
-  onClick,
-  isSelected,
-  detailIcon,
-  detailDescription,
-}) {
-  return (
-    <>
-      <div
-        className="card bg-transparent text-white border-0 home"
-        onClick={onClick}
-      >
-        <Image src={iconSrc} alt="product" />
-        <div className="card-body">
-          <h4 className="card-title mb-3">{title}</h4>
-          <p className="card-text text-white">{description}</p>
-        </div>
-      </div>
-      {isSelected && (
-        <div className="row">
-          <div className="col-lg-6">
-            <Image src={detailIcon} alt="detail" />
-          </div>
-          <div className="col-lg-6">
-            <h3>{title}</h3>
-            <p>{detailDescription}</p>
-          </div>
-        </div>
-      )}
-    </>
   );
 }

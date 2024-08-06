@@ -59,7 +59,7 @@ export default function Produit() {
           <div className="row">
             {projectCards.map((card, index) => (
               <div key={index} className={`col-lg-4 mb-5`}>
-                <Card {...card} customClassName="" />
+                <Card {...card} customClassName="py-3" />
               </div>
             ))}
           </div>

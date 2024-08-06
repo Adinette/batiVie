@@ -8,7 +8,6 @@ import Link from "next/link";
 import Breadcrumb from "@/component/Breadcrumb";
 import Image from "next/image";
 
-
 export default function Service() {
   const servicesCards = [
     {
@@ -31,29 +30,31 @@ export default function Service() {
   return (
     <div>
       <Header />
-      <Banner
-        title={"Nos services"}
-        description={"Nous proposons une variété de services"}
-      />
-        <Breadcrumb
+      <Breadcrumb
         className=""
         content={[
-          { label: "Home", url: '/home' },
-          { label: "Services", url: ''},
+          { label: "Home", url: "/home" },
+          { label: "Services", url: "" },
+          { label: "Location", url: "" },
         ]}
       />
-      <div className="services">
+      <div className="service-detail">
         <div className="container">
           <div className="row">
-            {servicesCards.map((card, index) => (
-              <div key={index} className={`col-lg-4 position-relative `}>
-                <Card {...card} customClassName="card-service" />
+            <div className="col-6 me-auto">
+              <div className="text-start ps-5">
+                <h2>LOCATION D’ENGINS</h2>
+                <span class="banner-text">
+                  NOUS METTONS A VOTRE DISPOSITION DES ENGINS DE QUALITE POUR
+                  TOUT TRAVEAUX DE BTP{" "}
+                </span>
               </div>
-            ))}
-            <div className="col-12 mt-3">
-              <div className="text-center text-white">
-                <Link href={"/services-detail"}>Voir tous les services<Image src={images.serviceVector} alt="vector" className="ms-3"/></Link>
-              </div>
+                <ul className="service-detail-list">
+                  <li className="service-detail-list-item">Chargeuses (Chargeurs)</li>
+                  <li className="service-detail-list-item">Chargeuses (Chargeurs)</li>
+                  <li className="service-detail-list-item">Chargeuses (Chargeurs)</li>
+                  <li className="service-detail-list-item">Chargeuses (Chargeurs)</li>
+                </ul>
             </div>
           </div>
         </div>

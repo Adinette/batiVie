@@ -2,6 +2,8 @@ import React from "react";
 import { images } from "../app/style/icon";
 import SectionTitle from "./SectionTitle";
 import Card from "@/component/Card";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function SectionProject() {
   const projectCards = [
@@ -32,8 +34,8 @@ export default function SectionProject() {
             </div>
           ))}
           <div className="col-12 mt-3">
-            <div className="text-end text-white">
-              <a href={""}>Voir tous les services</a>
+            <div className="text-end">
+              <Link className="text-black" href={"/"}>Voir tous les projets<Image className="ms-2" src={images.vector} alt=""/></Link>
             </div>
           </div>
         </div>

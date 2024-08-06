@@ -8,6 +8,8 @@ import project1 from './project1.svg'
 import service1 from './service1.svg'
 import service2 from './service1.svg'
 import service3 from './service1.svg'
+import vector from './vector.svg'
+import serviceVector from './service-vector.svg'
 
 
 export const images = {
@@ -21,4 +23,6 @@ export const images = {
     service1,
     service2,
     service3,
+    vector,
+    serviceVector,
 }

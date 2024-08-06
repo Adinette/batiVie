@@ -9,13 +9,13 @@ h1 {
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 .h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -31,6 +31,11 @@ ul li {
 }
 ul {
   padding-left: 0;
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 .navbar {
@@ -47,9 +52,11 @@ ul {
   color: #fab341;
 }
 .btn {
-  padding: 0.95rem 1rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .btn-primary {
@@ -63,8 +70,6 @@ ul {
   color: #000;
   background-color: #fab341;
 }
-
-
 .btn-outline-primary {
   color: #000;
   background-color: #fff;
@@ -104,6 +109,9 @@ textarea.form-control {
   min-height: calc(1.5em + 8.75rem + calc(var(--bs-border-width)* 2));
 }
 
+.modal-register{
+  border-radius: 1rem;
+}
 .card-title{
     font-size: 1.25rem;
     font-weight: 600;
@@ -123,11 +131,67 @@ textarea.form-control {
 .home_bg .row {
   padding: 7rem 0;
 }
+
+.products{
+  color: #191a19;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-content{
+  padding: 14rem 5rem;
+  background-color: #e8e8e8;
+}
+
+.product {
+  padding: 7rem 0 4rem;
+  background-color: #191a19;
+}
+
+.product-tab{
+  background-color: #e8e8e8;
+}
+
+.product-tab h6{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.product-tab a{
+  color: #000;
+  display: flex;
+  justify-content: end;
+}
+
+
+.p-tabview-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-content h3{
+  color: #fab341;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.p-unselectable-text a{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .home-listing {
   background-color: #fab341;
   padding: 2.3rem 1.5rem;
   border-radius: 1rem;
-  transform: translateY(410px);
+  transform: translateY(468px);
+}
+
+.home-listing li{
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .home-experience {
@@ -142,6 +206,8 @@ textarea.form-control {
 
 .home-experience-item h4 {
   color: #fab341;
+  font-size: 3rem;
+  font-weight: 700;
 }
 .home-experience-item span {
   color: #fff;
@@ -155,6 +221,8 @@ textarea.form-control {
 }
 .experience-text h2 {
   color: #fab341;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .project {
@@ -195,7 +263,17 @@ textarea.form-control {
 .card.home img{
   width: fit-content;
 }
-
+.p-tabview-nav-content{
+  margin-bottom: 2rem;
+}
+.p-unselectable-text a {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.p-unselectable-text a:hover {
+  color: #fab341;
+}
 .testimonials {
   background-color: #191a19;
   text-align: center;
@@ -235,8 +313,7 @@ textarea.form-control {
   background-color: #191a19;
 }
 
-.services a,
-.home a{
+.services a{
   color: #fff;
   font-size: 1.125rem;
   font-weight: 600;
@@ -245,6 +322,7 @@ textarea.form-control {
 
 .services img{
   border-radius: 0.5rem;
+  
 }
 
 .card-service{
@@ -254,6 +332,31 @@ textarea.form-control {
   padding: 2rem;
 }
 
+.service-detail{
+  background-color: #191a19;
+  padding: 4rem 0 0;
+}
+
+.service-detail h2{
+  color: #fab341;
+}
+.service-detail span{
+  color: #fff;
+}
+.service-detail-list{
+  margin-top: 8rem;
+}
+.service-detail-list-item{
+  background-color: #fab341;
+  padding: 1rem;
+  font-weight: 700;
+  list-style: disc !important;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.service-detail li::marker { 
+  color: #fab341;
+}
 .contact{
   background-color: #191a19;
   padding: 4rem 0 0;
@@ -261,8 +364,8 @@ textarea.form-control {
 
 .contact-content{
   background-color: #fab341;
-    border-radius: 1rem;
-    padding: 2.5rem;
+  border-radius: 1rem;
+  padding: 2.5rem;
 }
 
 .location-title{
@@ -308,3 +411,4 @@ textarea.form-control {
 .breadcrumb .breadcrumb-item-active{
   color: #fab341;
 }
+
