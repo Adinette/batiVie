@@ -8,7 +8,7 @@ import project1 from './project1.svg'
 import service1 from './service1.svg'
 import service2 from './service1.svg'
 import service3 from './service1.svg'
-import vector from './vector.svg'
+import vector from './Vector.svg'
 import serviceVector from './service-vector.svg'
 
 
