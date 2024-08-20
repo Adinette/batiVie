@@ -34,7 +34,7 @@ ul {
   margin-bottom: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ a{
 
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:focus{
+.btn-primary:focus {
   color: #000;
   background-color: #fab341;
 }
@@ -76,7 +76,7 @@ a{
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:active,
-.btn-outline-primary:focus{
+.btn-outline-primary:focus {
   color: #000;
   background-color: #fff;
 }
@@ -88,12 +88,12 @@ a{
 
 .btn-secondary:hover,
 .btn-secondary:active,
-.btn-secondary:focus{
+.btn-secondary:focus {
   color: #fff;
   background-color: #191a19;
 }
 
-.form-control{
+.form-control {
   background-color: #fff;
   font-size: 0.875rem;
   font-weight: 500;
@@ -102,23 +102,23 @@ a{
   border: 1px solid #fff;
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
-  padding: 1rem ;
+  padding: 1rem;
 }
 
 textarea.form-control {
-  min-height: calc(1.5em + 8.75rem + calc(var(--bs-border-width)* 2));
+  min-height: calc(1.5em + 8.75rem + calc(var(--bs-border-width) * 2));
 }
 
-.modal-register{
+.modal-register {
   border-radius: 1rem;
 }
-.card-title{
-    font-size: 1.25rem;
-    font-weight: 600;
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-.card-text{
-    font-size: 1rem;
-    font-weight: 600;
+.card-text {
+  font-size: 1rem;
+  font-weight: 600;
 }
 /* home */
 .home_bg {
@@ -132,13 +132,13 @@ textarea.form-control {
   padding: 7rem 0;
 }
 
-.products{
+.products {
   color: #191a19;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.product-content{
+.product-content {
   padding: 14rem 5rem;
   background-color: #e8e8e8;
 }
@@ -148,34 +148,33 @@ textarea.form-control {
   background-color: #191a19;
 }
 
-.product-tab{
+.product-tab {
   background-color: #e8e8e8;
 }
 
-.product-tab h6{
+.product-tab h6 {
   font-size: 1.5rem;
   margin: 1rem 0;
 }
 
-.product-tab a{
+.product-tab a {
   color: #000;
   display: flex;
   justify-content: end;
 }
 
-
-.p-tabview-nav{
-    display: flex;
-    flex-wrap: wrap;
+.p-tabview-nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.product-content h3{
+.product-content h3 {
   color: #fab341;
   font-size: 3rem;
   font-weight: 700;
 }
 
-.p-unselectable-text a{
+.p-unselectable-text a {
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -189,7 +188,7 @@ textarea.form-control {
   transform: translateY(468px);
 }
 
-.home-listing li{
+.home-listing li {
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -239,19 +238,19 @@ textarea.form-control {
   background-color: #191a19;
 }
 
-.card-project .card-body{
-    text-align: start;
-    padding: 0;
+.card-project .card-body {
+  text-align: start;
+  padding: 0;
 }
 
-.card-project .card-title{
-    color: #fab341;
-    text-decoration: underline;
-    text-decoration-color: #fab341;
+.card-project .card-title {
+  color: #fab341;
+  text-decoration: underline;
+  text-decoration-color: #fab341;
 }
 
-.card-project .card-text{
-    padding-left: 1rem;
+.card-project .card-text {
+  padding-left: 1rem;
 }
 
 .products {
@@ -260,10 +259,10 @@ textarea.form-control {
   color: #fff;
 }
 
-.card.home img{
+.card.home img {
   width: fit-content;
 }
-.p-tabview-nav-content{
+.p-tabview-nav-content {
   margin-bottom: 2rem;
 }
 .p-unselectable-text a {
@@ -302,51 +301,50 @@ textarea.form-control {
   text-align: center;
   color: #fff;
 }
-.card-home{
+.card-home {
   position: absolute;
   bottom: 0;
   text-align: center;
 }
 
-.services{
+.services {
   padding: 4rem 0 0;
   background-color: #191a19;
 }
 
-.services a{
+.services a {
   color: #fff;
   font-size: 1.125rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.services img{
+.services img {
   border-radius: 0.5rem;
-  
 }
 
-.card-service{
+.card-service {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 2rem;
 }
 
-.service-detail{
+.service-detail {
   background-color: #191a19;
   padding: 4rem 0 0;
 }
 
-.service-detail h2{
+.service-detail h2 {
   color: #fab341;
 }
-.service-detail span{
+.service-detail span {
   color: #fff;
 }
-.service-detail-list{
+.service-detail-list {
   margin-top: 8rem;
 }
-.service-detail-list-item{
+.service-detail-list-item {
   background-color: #fab341;
   padding: 1rem;
   font-weight: 700;
@@ -354,61 +352,59 @@ textarea.form-control {
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
 }
-.service-detail li::marker { 
+.service-detail li::marker {
   color: #fab341;
 }
-.contact{
+.contact {
   background-color: #191a19;
   padding: 4rem 0 0;
 }
 
-.contact-content{
+.contact-content {
   background-color: #fab341;
   border-radius: 1rem;
   padding: 2.5rem;
 }
 
-.location-title{
+.location-title {
   font-weight: 600;
 }
 
-.about{
+.about {
   background-color: #191a19;
   padding: 4rem 0 0;
   color: #fff;
   text-align: center;
 }
 
-.about h2{
+.about h2 {
   color: #fab341;
 }
 
-.team{
+.team {
   background-color: #191a19;
   padding: 4rem 0 0;
-
 }
 
-.team h2{
+.team h2 {
   color: #fab341;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.team .card-body{
+.team .card-body {
   padding: 2rem 0;
   text-align: center;
   background-color: #000;
 }
 
-.breadcrumb{
+.breadcrumb {
   background-color: #191a19;
   padding: 3rem 0 0;
 }
-.breadcrumb a{
+.breadcrumb a {
   color: #fff;
 }
-.breadcrumb .breadcrumb-item-active{
+.breadcrumb .breadcrumb-item-active {
   color: #fab341;
 }
-

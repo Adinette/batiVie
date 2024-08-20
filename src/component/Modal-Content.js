@@ -4,7 +4,7 @@ export default function ModalContent({}) {
   return (
     <div class="modal-register">
       <span className="text-center fw-medium">
-        Un contrôle complet sur les produits nous permet d'offrir à nos clients
+        Un contrôle complet sur les produits nous permet d’offrir à nos clients
         la meilleure qualité prix et prestations. Nous sommes très fiers de tout
         ce que nous faisons chez BATI VITE - BENIN
       </span>

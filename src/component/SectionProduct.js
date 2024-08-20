@@ -26,7 +26,7 @@ export default function SectionProduct() {
                 <div className="product-content text-start">
                   <h3>Sanitaire</h3>
                   <h6 className="">Venez à la rencontre des plus grandes marques de sanitaires
-                    et d'accessoires de salle de bains exposées dans notre
+                    et d’accessoires de salle de bains exposées dans notre
                     showroom.Nos conseillers de ventes sont à votre disposition.</h6>
                     <Link href={"/product"} className="">
                     En savoir plus

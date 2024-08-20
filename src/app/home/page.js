@@ -1,10 +1,10 @@
-import Footer from "@/component/Footer";
-import Header from "@/component/Header";
+import Footer from "../../component/Footer";
+import Header from "../../component/Header";
 import React from "react";
 import Image from "next/image";
 import { images } from "../style/icon";
-import SectionProduct from "@/component/SectionProduct";
-import SectionProject from "@/component/SectionProject";
+import SectionProduct from "../../component/SectionProduct";
+import SectionProject from "../../component/SectionProject";
 import { Steps } from "primereact/steps";
 
 export default function Home() {

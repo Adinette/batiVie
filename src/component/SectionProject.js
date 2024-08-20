@@ -1,7 +1,7 @@
 import React from "react";
 import { images } from "../app/style/icon";
 import SectionTitle from "./SectionTitle";
-import Card from "@/component/Card";
+import Card from "./Card";
 import Image from "next/image";
 import Link from "next/link";
 

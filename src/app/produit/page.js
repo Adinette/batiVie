@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../component/Header";
 import Footer from "../../component/Footer";
-import Banner from "@/component/Banner";
-import Card from "@/component/Card";
+import Banner from "../../component/Banner";
+import Card from "../../component/Card";
 import { images } from "../style/icon";
-import Breadcrumb from "@/component/Breadcrumb";
+import Breadcrumb from "../../component/Breadcrumb";
 
 export default function Produit() {
   const projectCards = [

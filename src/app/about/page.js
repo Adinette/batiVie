@@ -3,8 +3,8 @@ import Header from '../../component/Header'
 import Footer from '../../component/Footer'
 import Image from 'next/image'
 import { images } from '../style/icon'
-import Card from '@/component/Card'
-import SectionTitle from '@/component/SectionTitle'
+import Card from '../../component/Card'
+import SectionTitle from '../../component/SectionTitle'
 
 
 export default function About() {
